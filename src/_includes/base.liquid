@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% assign siteTitle = 'Exploring APIs and 11ty in CSCI E-114' %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | {{ siteTitle }}</title>
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>{{ siteTitle }}</h1>
+      <nav>
+        <a href="https://canvas.harvard.edu/courses/112559/">CSCI&nbsp;E-114</a>
+        <a href="/">Assignment Home</a>
+      </nav>
+
+    </header>
+    <main>
+      <h2>{{ title }}</h2>
+      {{ content }}
+    </main>
+    {% render "footer.liquid" %}
+  </body>
+</html>
