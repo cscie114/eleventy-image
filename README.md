@@ -5,5 +5,5 @@
 - https://www.aleksandrhovhannisyan.com/blog/eleventy-image-plugin/
 
 ## Key things to note
-- ImageShortCode defined in eleventy config file (See `.eleventy.js`).  This is where we define the formats and sizes to produce, where they should go, etc.
+- ImageShortCode defined in eleventy config file (See `eleventy.config.js`).  This is where we define the formats and sizes to produce, where they should go, etc.
 - Using the image shortcode (see `index.liquid`)
