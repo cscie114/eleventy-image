@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-img": "^3.0.0"
+    "@11ty/eleventy": "^2.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-img": "^4.0.2"
   }
 }
