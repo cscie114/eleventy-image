@@ -3,7 +3,7 @@ title: Eleventy and the Image Plugin
 layout: base
 ---
 <p>Demo of 11ty Image plugin</p>
-<p class="parks-number">{{ parks.data.length }} parks in list</p>
+<p class="parks-number">{{ parksList.data.length }} parks in list</p>
 <div>
   {% for park in parks.data %}
     <section class="park">
@@ -12,8 +12,10 @@ layout: base
       <div class="parkimages">
         {% for img in park.images %}
           <div class="parkimage">
-            <!-- {{ img.url }} -->
-            {% image img.url, img.altText, "(max-width: 820px) 640px, (max-width: 1240px) 470px, 450px" %}
+            <picture>
+              <img alt="{{ img.altText }}" loading="lazy" decoding="async" src="{{ img.url }}" />
+              </picture>
+            
             <p class="credit">Credit: {{ img.credit }}</p>
             <p>{{ img.caption }}</p>
           </div>
